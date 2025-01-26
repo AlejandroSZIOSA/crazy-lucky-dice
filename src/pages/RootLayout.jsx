@@ -1,5 +1,11 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
+import HeaderCm from "../components/header/Header";
 
 export default function RootLayoutCm() {
-  return <div></div>;
+  return (
+    <>
+      <HeaderCm />
+      <Outlet />
+    </>
+  );
 }
